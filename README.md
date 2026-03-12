@@ -2,7 +2,7 @@
 Scripts for data analysis and visualization for Wensing, Després et al, 2025
 
 
-Read processing and sgRNA counting was performed on the Digital Research Alliance of Canada computing clusters. The notebooks used to generate the required scripts and analyze counts are provided as is and might require changes depending on your specific programming environment. The basic environment used for these analysis contains the following packages: 
+Read processing and sgRNA counting was performed on the Digital Research Alliance of Canada computing clusters. The notebooks used to generate the required scripts and analyze counts are provided as is and might require changes depending on your specific programming environment. The basic environment used for these analyses contains the following python packages: 
 - contourpy-1.2.1
 - cycler-0.12.1
 - fonttools-4.53.0
@@ -22,13 +22,15 @@ Read processing and sgRNA counting was performed on the Digital Research Allianc
 - tzdata-2024.1 
 - seaborn-0.13.2
 
-Downstream analysis and visualization was performed in Jupyter Notebooks, using the following packages: 
+Downstream analysis and visualization were performed in Jupyter Notebooks, using the following packages: 
 - numpy-v1.26.4
 - matplotlib-3.9.2
 - scipy-1.13.1
 - pandas-2.2.2
 - seaborn-0.13.2
 - biopython-1.85
+
+Installation time and requirements will depend on your computer and programming environment setup, but should be relatively quick. Source data for sgRNA annotations, growth curves and qPCR are provided as part of the repository, while the raw sequencing data files  used as input to compute read counts will need to be downloaded from the NCBI SRA (PRJNA1381690). Most notebooks should run in a few minutes on a standard computer.
 
 The repository is divided into five directories:
 - 00_sgRNA_annot: Annotates sgRNAs in the library with different information on TSS, GC content, SNPs.
